@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BasketballCounter</string>
+    <string name="team_A">Team A</string>
+    <string name="team_B">Team B</string>
+    <string name="three_points">+3 points</string>
+    <string name="two_points">+2 points</string>
+    <string name="free_throw">FREE THROW</string>
+    <string name="reset">RESET</string>
+    <string name="foul">FOUL</string>
+    <string name="nice_match_str">nice match!</string>
+    <string name="save">save</string>
+    <string name="nice_match_toast">Well played!</string>
+
+
+</resources>
