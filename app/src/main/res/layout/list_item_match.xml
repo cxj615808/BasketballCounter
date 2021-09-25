@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="8dp">
+
+    <TextView
+            android:id="@+id/match_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Match Title"/>
+
+    <TextView
+            android:id="@+id/match_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Match Date"/>
+    <TextView
+            android:id="@+id/team_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team A"/>
+    <TextView
+            android:id="@+id/team_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"/>
+    <TextView
+            android:id="@+id/score_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score A"/>
+    <TextView
+            android:id="@+id/score_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score B"/>
+
+</LinearLayout>

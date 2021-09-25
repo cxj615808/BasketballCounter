@@ -12,12 +12,17 @@
     <!--        android:padding="24dp"-->
     <!--        android:gravity="center"-->
     <!--        />-->
+    <EditText
+            android:id="@+id/match_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/team_A"></EditText>
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center">
-
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

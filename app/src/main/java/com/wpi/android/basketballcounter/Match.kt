@@ -7,8 +7,12 @@ import java.util.*
 
 @Entity
 data class Match(@PrimaryKey val id: UUID = UUID.randomUUID(),
+                 var title: String = "",
                  var score_A: Int = 0,
                  var score_B: Int = 0,
                  var foul_A: Int = 0,
                  var foul_B: Int = 0,
+                 var date: Date = Date(),
+                 var teamA: String = "",
+                 var teamB: String = "",
                  )
