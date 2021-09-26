@@ -4,13 +4,6 @@ import androidx.lifecycle.ViewModel
 
 class MatchListViewModel : ViewModel() {
 
-    val matchs = mutableListOf<Match>()
-
-    init {
-        for (i in 0 until 100) {
-            val match = Match()
-            match.title = "Match #$i"
-            matchs += match
-        }
-    }
+    private val matchRepository = MatchRepository.get()
+    val matchListLiveData = matchRepository.getMatchs()
 }

@@ -42,25 +42,6 @@
                 android:gravity="center"
                 android:textSize="30sp"
                 />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="FOUL: "
-                    />
-                <TextView
-                    android:id="@+id/foul_A_s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -100,25 +81,7 @@
                 android:gravity="center"
                 android:textSize="30sp"
                 />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="FOUL: "
-                    />
-                <TextView
-                    android:id="@+id/foul_B_s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    />
-            </LinearLayout>
+
 
 
         </LinearLayout>

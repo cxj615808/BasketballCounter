@@ -13,8 +13,7 @@ class ScoreViewModel : ViewModel() {
 
     var score_A = 0
     var score_B = 0
-    var foul_A  = 0
-    var foul_B  = 0
+
 
     fun addPoints(pointsNum: Int, flag: Int)  {
         if (flag==0){
@@ -26,22 +25,13 @@ class ScoreViewModel : ViewModel() {
         }
     }
 
-    fun addFouls(FoulNum: Int, flag: Int)  {
-        if (flag==0){
-            foul_A+=FoulNum
-            Log.d(TAG, "Get Fouls for team A $FoulNum")
-        }else{
-            foul_B+=FoulNum
-            Log.d(TAG, "Get Fouls for team B $FoulNum")
-        }
-    }
+
 
     fun reset(){
         Log.d(TAG, "Points reset")
         score_A = 0
         score_B = 0
-        foul_A = 0
-        foul_B = 0
+
     }
 
 }
