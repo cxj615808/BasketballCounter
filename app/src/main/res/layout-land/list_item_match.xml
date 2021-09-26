@@ -1,40 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:padding="8dp">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:id="@+id/linearLayout">
 
     <TextView
             android:id="@+id/match_title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Match Title"/>
+            android:text="Match Title"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp" android:layout_marginEnd="339dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/match_date"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="1dp"/>
 
     <TextView
             android:id="@+id/match_date"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Match Date"/>
+            android:text="Match Date"
+            app:layout_constraintTop_toBottomOf="@+id/match_title" android:layout_marginEnd="338dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
             android:id="@+id/team_A"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Team A"/>
+            android:text="Team A"
+            app:layout_constraintTop_toBottomOf="@+id/match_date" app:layout_constraintEnd_toStartOf="@+id/winning"
+            android:layout_marginEnd="314dp"/>
     <TextView
             android:id="@+id/team_B"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Team B"/>
+            android:text="Team B"
+            app:layout_constraintTop_toBottomOf="@+id/team_A" app:layout_constraintEnd_toStartOf="@+id/winning"
+            android:layout_marginEnd="315dp"/>
     <TextView
             android:id="@+id/score_A"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score A"/>
+            android:text="Score A"
+            app:layout_constraintTop_toBottomOf="@+id/team_B" app:layout_constraintEnd_toStartOf="@+id/winning"
+            android:layout_marginEnd="314dp"/>
     <TextView
             android:id="@+id/score_B"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score B"/>
+            android:text="Score B"
+            app:layout_constraintTop_toBottomOf="@+id/score_A" android:layout_marginEnd="362dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_winning" android:id="@+id/winning"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="46dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="28dp"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
